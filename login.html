@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="login.css">
+
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+<body onload="document.getElementById('id01').style.display='block'">
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="student.png" alt="Avatar" class="avatar" style="width: 50%;height: 50%">
+    </div>
+
+    <div class="container">
+      
+     <!--<label for="uname"><b>Username</b></label>
+      <i class="fa fa-envelope icon"></i>
+      <input  type="text" placeholder="Username" style="font-family: 2vw;" name="uname" required >-->
+
+      <label for="eml"><b>E-Mail</b></label>
+      <input type="email" placeholder="E-mail" name="eml" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Password" name="psw" required>
+        
+      <button type="submit"><a href="index.html">Login</a></button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn"><a href="index.html">Cancel</a></button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+
+</body>
+</html>
